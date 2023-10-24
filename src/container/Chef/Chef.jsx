@@ -16,13 +16,13 @@ const Chef = () => {
                 <div className='app__chef-content'>
                     <div className='app__chef-content_quote'>
                         <img src={images.quote} alt='quote' />
-                        <p className='p__opensans'>Lorem ipsum something something dey do these people but dem no know</p>
+                        <p className='p__opensans'>Lorem ipsum something dey do these people but something dey do these people but</p>
                     </div>
                     <p className='p__opensans'>Lorem ipsum something something dey do these people but dem no knowLorem ipsum something something dey do these people but dem no knowLorem ipsum something something dey do these people but dem no know</p>
                 </div>
 
                 <div className='app__chef-sign'>
-                    <p>Kevin Luo</p>
+                    <p className=''>Kevin Luo</p>
                     <p className='p__opensans'>Chef & Founder</p>
                     <img src={images.sign} alt='sign' />
                 </div>
