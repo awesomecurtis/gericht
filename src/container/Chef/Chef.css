@@ -1,0 +1,22 @@
+.app__bg {} 
+
+.app__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+ .app__wrapper_img  {}
+
+ .app__wrapper_img-reverse  {}
+
+ .app__wrapper_info {}
+
+ .headtext__cormorant {}
+
+ .app__chef-content {}
+
+ .app__chef-content_quote {}
+
+ .app__chef-sign {}
+
+ 
