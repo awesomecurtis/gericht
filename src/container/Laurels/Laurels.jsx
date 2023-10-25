@@ -3,7 +3,7 @@ import './Laurels.css';
 
 const Laurels = () => {
     return (
-        <div>
+        <div id='awards'>
             Laurels
         </div>
     )
