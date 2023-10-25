@@ -3,6 +3,16 @@ import { SubHeading } from '../../components';
 import { images, data } from '../../constants';
 import './Laurels.css';
 
+const AwardCard = ({ award: { imgUrl, title, subtitle} }) => (
+    <div className='app__laurels_award-card'>
+        <img src={imgUrl} alt='award' />
+        <div className='app__laurels_award-card_content'>
+            <p className='p__cormorant'>{ title}</p>
+            <p className='p__opensans'>{ subtitle}</p>
+        </div>
+    </div>
+);
+
 const Laurels = () => {
     return (
         <div className='app__bg app__wrapper section__padding' id='awards'>
@@ -10,25 +20,13 @@ const Laurels = () => {
                 <SubHeading title='Awards & Recognition' />
                 <h1 className='headtext__cormorant'>Our Laurels</h1>
                 <div className='app__laurels_awards'>
-                    {data.awards.map((award, index) => (
-                        <div className='app__laurels_awards-container'>
-                            <div className='app__laurels_awards-img'>
-                            <img src={award.imgUrl} alt='award' />
-                            </div>
-                            <div className='app__laurels_awards-info'>
-                                <div className='app__laurels_awards-info_title'>
-                                    <h3 className='p__cormorant'>{ award.title}</h3>
-                                </div>
-                                <div className='app__laurels_awards-info_sub'>
-                                    <p className='p__opensans'>{ award.subtitle}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                    {
+                        data.awards.map((award, index) => <AwardCard award={award} key={award.title} />
+                    )}
                 </div>
             </div>
             <div className='app__wrapper__img'>
-
+                    <img src={images.laurels} alt='laurels' />    
             </div>
         </div>
     )
