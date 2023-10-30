@@ -85,9 +85,11 @@ flex-direction: column;
 
 
 @media screen and (max-width: 650px) {
-    .app__specialMenu-menu_img{
-        width: 100;
-    }
+    .app__specialMenu-menu_img {
+            width: 100%;
+        }
+    
+             
 
     .app__specialMenu-menu_heading{
         font-size: 35px;
@@ -97,4 +99,14 @@ flex-direction: column;
 .app__specialMenu-menu_cocktail {
     margin: 0 2rem;
 }
+}
+
+
+@media screen and (max-width: 450px) {
+   
+
+ .app__specialMenu-menu_img img {
+     width: 100%;
+ }
+
 }
